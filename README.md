@@ -2,6 +2,12 @@
 
 [![Circle CI](https://circleci.com/gh/tomoya55/bingo/tree/master.svg?style=svg)](https://circleci.com/gh/tomoya55/bingo/tree/master)
 
+Simple Bing Search API Client for Ruby.
+
+![Bingo](https://farm3.staticflickr.com/2324/2067637939_f0d146cddb.jpg)
+
+[Was his name](https://www.flickr.com/photos/jaycoxfilm/2067637939/) by [Jay Cox](https://www.flickr.com/photos/jaycoxfilm/)
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -43,7 +49,6 @@ $ Bingo.search('your_account_key', 'ruby')
 
 ### API
 
-Simple Bing Search API Client for Ruby.
 Currently [Bing Search API – Web Results Only](https://datamarket.azure.com/dataset/bing/searchweb#schema) is supported, but is planned to support [Bing Search API](https://datamarket.azure.com/dataset/5BA839F1-12CE-4CCE-BF57-A49D98D29A44) as well.
 
 ### Response format
