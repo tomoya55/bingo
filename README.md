@@ -1,6 +1,6 @@
 # Bingo
 
-Simple Bing Search API Client for Ruby.
+[![Circle CI](https://circleci.com/gh/tomoya55/bingo/tree/master.svg?style=svg)](https://circleci.com/gh/tomoya55/bingo/tree/master)
 
 ## Installation
 
@@ -41,6 +41,37 @@ $ Bingo.search('your_account_key', 'ruby')
     ]
   }
 }
+```
+
+## Current Development status
+
+### API
+
+Simple Bing Search API Client for Ruby.
+Currently [Bing Search API – Web Results Only](https://datamarket.azure.com/dataset/bing/searchweb#schema) is supported, but is planned to support [Bing Search API](https://datamarket.azure.com/dataset/5BA839F1-12CE-4CCE-BF57-A49D98D29A44) as well.
+
+### Response format
+
+Only JSON is available. ATOM(XML) is planned to be supported before v1.0.0.
+
+## Getting Account Key on Microsoft Windows Azure Marketplace
+
+(TBD)
+
+## Development
+
+### Setup
+
+```
+git clone https://github.com/tomoya55/bingo.git
+cd bingo
+bundle
+```
+
+### Run test
+
+```
+bundle exec rake test
 ```
 
 ## Contributing

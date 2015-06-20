@@ -21,7 +21,8 @@ module Bingo
 
     def search(query, options = {})
       response = perform_search(query, options)
-      JSON.parse(response.body)
+      json = JSON.parse(response.body)
+      json["d"]["results"]
     end
 
     private
