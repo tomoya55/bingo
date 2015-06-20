@@ -1,8 +1,6 @@
 # Bingo
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/bingo`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Simple Bing Search API Client for Ruby.
 
 ## Installation
 
@@ -22,13 +20,28 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release` to create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```
+$ Bingo.search('your_account_key', 'ruby')
+#=>
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "uri": "https://api.datamarket.azure.com/Data.ashx/Bing/SearchWeb/v1/Web?Query='ruby'&$skip=0&$top=1",
+          "type": "WebResult"
+        },
+        "ID": "4e17655c-00e0-4ef1-8337-609f11530507",
+        "Title": "Ruby - Wikipedia, la enciclopedia libre",
+        "Description": "Ruby es un lenguaje de programación interpretado , reflexivo y orientado a objetos , creado por el programador japonés Yukihiro \"Matz\" Matsumoto , quien comenzó a ...",
+        "DisplayUrl": "es.wikipedia.org/wiki/Ruby",
+        "Url": "http://es.wikipedia.org/wiki/Ruby"
+      }
+      ...
+    ]
+  }
+}
+```
 
 ## Contributing
 
