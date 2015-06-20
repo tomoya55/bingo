@@ -23,24 +23,20 @@ Or install it yourself as:
 ```
 $ Bingo.search('your_account_key', 'ruby')
 #=>
-{
-  "d": {
-    "results": [
-      {
-        "__metadata": {
-          "uri": "https://api.datamarket.azure.com/Data.ashx/Bing/SearchWeb/v1/Web?Query='ruby'&$skip=0&$top=1",
-          "type": "WebResult"
-        },
-        "ID": "4e17655c-00e0-4ef1-8337-609f11530507",
-        "Title": "Ruby - Wikipedia, la enciclopedia libre",
-        "Description": "Ruby es un lenguaje de programación interpretado , reflexivo y orientado a objetos , creado por el programador japonés Yukihiro \"Matz\" Matsumoto , quien comenzó a ...",
-        "DisplayUrl": "es.wikipedia.org/wiki/Ruby",
-        "Url": "http://es.wikipedia.org/wiki/Ruby"
-      }
-      ...
-    ]
-  }
-}
+[
+  {
+    "__metadata": {
+      "uri": "https://api.datamarket.azure.com/Data.ashx/Bing/SearchWeb/v1/Web?Query='ruby'&$skip=0&$top=1",
+      "type": "WebResult"
+    },
+    "ID": "4e17655c-00e0-4ef1-8337-609f11530507",
+    "Title": "Ruby - Wikipedia, la enciclopedia libre",
+    "Description": "Ruby es un lenguaje de programación interpretado , reflexivo y orientado a objetos , creado por el programador japonés Yukihiro \"Matz\" Matsumoto , quien comenzó a ...",
+    "DisplayUrl": "es.wikipedia.org/wiki/Ruby",
+    "Url": "http://es.wikipedia.org/wiki/Ruby"
+  },
+  ...
+]
 ```
 
 ## Current Development status
